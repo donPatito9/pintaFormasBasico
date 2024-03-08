@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Evaluación 3 Diseño Web</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+     
+table {
+    width: 350px;
+    height: 350px;
+ }
+ #contenedor{
+margin: auto;
+     overflow: hidden;
+ }
+ #izquierdo{
+     float: left;
+      
+ }
+ #derecho{
+     float:left;
+     padding-left: 300px;
+     margin-bottom: 30px;
+    
+ }
+ #texto{
+     font-style: normal;
+     font-size: 70;
+ }
+ </style>
+ <h1 id="texto">Pinta colores</h1>
+ </head>
+ 
+ <body>
+    <div id="contenedor">
+
+    <div id="izquierdo">
+    <h3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Color</h3>
+        <input type="radio" name ="colores" id ="rojo" value="rojo"/> Rojo<br>
+        <input type="radio" name ="colores" id = "amarillo" value="amarillo"/>Amarillo<br>
+        <input type="radio" name ="colores" id = "verde" value="verde"/>verde<br>
+    </div>
+
+    <h3 >
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Forma</h3>  
+    <div id="derecho">
+          <input type="radio" name ="formas" id ="cruz" value="cruz"/>Cruz<br>
+          <input type="radio" name ="formas" id ="cuadrado" value="cuadrado"/>Cuadrado<br>
+          <input type="radio" name ="formas" id = "triangulo" value="triangulo"/>Triangulo<br>
+ </div><br>
+</div>
+<table border="1" >
+     <tr>
+        <td id="1"></td>
+        <td id="2"></td>
+        <td id="3"></td>
+        <td id="4"></td>
+        <td id="5"></td>
+    </tr>
+    <tr>
+        <td id="6"></td>
+        <td id="7"></td>
+        <td id="8"></td>
+        <td id="9"></td>
+        <td id="10"></td>
+    </tr>
+    <tr>
+        <td id="11"></td>
+        <td id="12"></td>
+        <td id="13"></td>
+        <td id="14"></td>
+        <td id="15"></td>
+    </tr>
+    <tr>
+        <td id="16"></td>
+        <td id="17"></td>
+        <td id="18"></td>
+        <td id="19"></td>
+        <td id="20"></td>
+    </tr>
+    <tr>
+        <td id="21"></td>
+        <td id="22"></td>
+        <td id="23"></td>
+        <td id="24"></td>
+        <td id="25"></td>
+    </tr>
+</table>
+<script type="text/javascript">
+        document.getElementById("rojo").addEventListener("click",cambiarFormayColor);
+        document.getElementById("amarillo").addEventListener("click",cambiarFormayColor);
+        document.getElementById("verde").addEventListener("click",cambiarFormayColor);
+        
+        document.getElementById("cruz").addEventListener("click",cambiarFormayColor);
+        document.getElementById("cuadrado").addEventListener("click",cambiarFormayColor);
+        document.getElementById("triangulo").addEventListener("click",cambiarFormayColor);
+
+function cambiarFormayColor() {
+    if (document.getElementById("rojo").checked &&
+        document.getElementById("cruz").checked) {
+        document.getElementById("1").style.backgroundColor = "red";
+        document.getElementById("2").style.backgroundColor = "white";
+        document.getElementById("3").style.backgroundColor = "white";
+        document.getElementById("4").style.backgroundColor = "white";
+        document.getElementById("5").style.backgroundColor = "red";
+        document.getElementById("6").style.backgroundColor = "white";
+        document.getElementById("7").style.backgroundColor = "red";
+        document.getElementById("8").style.backgroundColor = "white";
+        document.getElementById("9").style.backgroundColor = "red";
+        document.getElementById("10").style.backgroundColor = "white";
+        document.getElementById("11").style.backgroundColor = "white";
+        document.getElementById("12").style.backgroundColor = "white";
+        document.getElementById("13").style.backgroundColor = "red";
+        document.getElementById("14").style.backgroundColor = "white";
+        document.getElementById("15").style.backgroundColor = "white";
+        document.getElementById("16").style.backgroundColor = "white";
+        document.getElementById("17").style.backgroundColor = "red";
+        document.getElementById("18").style.backgroundColor = "white";
+        document.getElementById("19").style.backgroundColor = "red";
+        document.getElementById("20").style.backgroundColor = "white";
+        document.getElementById("21").style.backgroundColor = "red";
+        document.getElementById("22").style.backgroundColor = "white";
+        document.getElementById("23").style.backgroundColor = "white";
+        document.getElementById("24").style.backgroundColor = "white";
+        document.getElementById("25").style.backgroundColor = "red";
+ }
+    if (document.getElementById("rojo").checked &&
+        document.getElementById("cuadrado").checked) {
+        document.getElementById("1").style.backgroundColor = "red";
+        document.getElementById("2").style.backgroundColor = "red";
+        document.getElementById("3").style.backgroundColor = "red";
+        document.getElementById("4").style.backgroundColor = "red";
+        document.getElementById("5").style.backgroundColor = "red";
+        document.getElementById("6").style.backgroundColor = "red";
+        document.getElementById("7").style.backgroundColor = "white";
+        document.getElementById("8").style.backgroundColor = "white";
+        document.getElementById("9").style.backgroundColor = "white";
+        document.getElementById("10").style.backgroundColor = "red";
+        document.getElementById("11").style.backgroundColor = "red";
+        document.getElementById("12").style.backgroundColor = "white";
+        document.getElementById("13").style.backgroundColor = "white";
+        document.getElementById("14").style.backgroundColor = "white";
+        document.getElementById("15").style.backgroundColor = "red";
+        document.getElementById("16").style.backgroundColor = "red";
+        document.getElementById("17").style.backgroundColor = "white";
+        document.getElementById("18").style.backgroundColor = "white";
+        document.getElementById("19").style.backgroundColor = "white";
+        document.getElementById("20").style.backgroundColor = "red";
+        document.getElementById("21").style.backgroundColor = "red";
+        document.getElementById("22").style.backgroundColor = "red";
+        document.getElementById("23").style.backgroundColor = "red";
+        document.getElementById("24").style.backgroundColor = "red";
+        document.getElementById("25").style.backgroundColor = "red";
+ }
+    if (document.getElementById("rojo").checked &&
+        document.getElementById("triangulo").checked) {
+        document.getElementById("1").style.backgroundColor = "white";
+        document.getElementById("2").style.backgroundColor = "white";
+        document.getElementById("3").style.backgroundColor = "white";
+        document.getElementById("4").style.backgroundColor = "white";
+        document.getElementById("5").style.backgroundColor = "white";
+        document.getElementById("6").style.backgroundColor = "white";
+        document.getElementById("7").style.backgroundColor = "white";
+        document.getElementById("8").style.backgroundColor = "white";
+        document.getElementById("9").style.backgroundColor = "white";
+        document.getElementById("10").style.backgroundColor = "white";
+        document.getElementById("11").style.backgroundColor = "white";
+        document.getElementById("12").style.backgroundColor = "white";
+        document.getElementById("13").style.backgroundColor = "red";
+        document.getElementById("14").style.backgroundColor = "white";
+        document.getElementById("15").style.backgroundColor = "white";
+        document.getElementById("16").style.backgroundColor = "white";
+        document.getElementById("17").style.backgroundColor = "red";
+        document.getElementById("18").style.backgroundColor = "red";
+        document.getElementById("19").style.backgroundColor = "red";
+        document.getElementById("20").style.backgroundColor = "white";
+        document.getElementById("21").style.backgroundColor = "red";
+        document.getElementById("22").style.backgroundColor = "red";
+        document.getElementById("23").style.backgroundColor = "red";
+        document.getElementById("24").style.backgroundColor = "red";
+        document.getElementById("25").style.backgroundColor = "red";
+ }
+    if (document.getElementById("amarillo").checked &&
+        document.getElementById("cruz").checked) {
+        document.getElementById("1").style.backgroundColor = "yellow";
+        document.getElementById("2").style.backgroundColor = "white";
+        document.getElementById("3").style.backgroundColor = "white";
+        document.getElementById("4").style.backgroundColor = "white";
+        document.getElementById("5").style.backgroundColor = "yellow";
+        document.getElementById("6").style.backgroundColor = "white";
+        document.getElementById("7").style.backgroundColor = "yellow";
+        document.getElementById("8").style.backgroundColor = "white";
+        document.getElementById("9").style.backgroundColor = "yellow";
+        document.getElementById("10").style.backgroundColor = "white";
+        document.getElementById("11").style.backgroundColor = "white";
+        document.getElementById("12").style.backgroundColor = "white";
+        document.getElementById("13").style.backgroundColor = "yellow";
+        document.getElementById("14").style.backgroundColor = "white";
+        document.getElementById("15").style.backgroundColor = "white";
+        document.getElementById("16").style.backgroundColor = "white";
+        document.getElementById("17").style.backgroundColor = "yellow";
+        document.getElementById("18").style.backgroundColor = "white";
+        document.getElementById("19").style.backgroundColor = "yellow";
+        document.getElementById("20").style.backgroundColor = "white";
+        document.getElementById("21").style.backgroundColor = "yellow";
+        document.getElementById("22").style.backgroundColor = "white";
+        document.getElementById("23").style.backgroundColor = "white";
+        document.getElementById("24").style.backgroundColor = "white";
+        document.getElementById("25").style.backgroundColor = "yellow";
+ }
+    if (document.getElementById("amarillo").checked &&
+        document.getElementById("cuadrado").checked) {
+        document.getElementById("1").style.backgroundColor = "yellow";
+        document.getElementById("2").style.backgroundColor = "yellow";
+        document.getElementById("3").style.backgroundColor = "yellow";
+        document.getElementById("4").style.backgroundColor = "yellow";
+        document.getElementById("5").style.backgroundColor = "yellow";
+        document.getElementById("6").style.backgroundColor = "yellow";
+        document.getElementById("7").style.backgroundColor = "white";
+        document.getElementById("8").style.backgroundColor = "white";
+        document.getElementById("9").style.backgroundColor = "white";
+        document.getElementById("10").style.backgroundColor = "yellow";
+        document.getElementById("11").style.backgroundColor = "yellow";
+        document.getElementById("12").style.backgroundColor = "white";
+        document.getElementById("13").style.backgroundColor = "white";
+        document.getElementById("14").style.backgroundColor = "white";
+        document.getElementById("15").style.backgroundColor = "yellow";
+        document.getElementById("16").style.backgroundColor = "yellow";
+        document.getElementById("17").style.backgroundColor = "white";
+        document.getElementById("18").style.backgroundColor = "white";
+        document.getElementById("19").style.backgroundColor = "white";
+        document.getElementById("20").style.backgroundColor = "yellow";
+        document.getElementById("21").style.backgroundColor = "yellow";
+        document.getElementById("22").style.backgroundColor = "yellow";
+        document.getElementById("23").style.backgroundColor = "yellow";
+        document.getElementById("24").style.backgroundColor = "yellow";
+        document.getElementById("25").style.backgroundColor = "yellow";
+ }
+    if (document.getElementById("amarillo").checked &&
+        document.getElementById("triangulo").checked) {
+        document.getElementById("1").style.backgroundColor = "white";
+        document.getElementById("2").style.backgroundColor = "white";
+        document.getElementById("3").style.backgroundColor = "white";
+        document.getElementById("5").style.backgroundColor = "white";
+        document.getElementById("6").style.backgroundColor = "white";
+        document.getElementById("7").style.backgroundColor = "white";
+        document.getElementById("8").style.backgroundColor = "white";
+        document.getElementById("9").style.backgroundColor = "white";
+        document.getElementById("10").style.backgroundColor = "white";
+        document.getElementById("11").style.backgroundColor = "white";
+        document.getElementById("12").style.backgroundColor = "white";
+        document.getElementById("13").style.backgroundColor = "yellow";
+        document.getElementById("14").style.backgroundColor = "white";
+        document.getElementById("15").style.backgroundColor = "white";
+        document.getElementById("16").style.backgroundColor = "white";
+        document.getElementById("17").style.backgroundColor = "yellow";
+        document.getElementById("18").style.backgroundColor = "yellow";
+        document.getElementById("19").style.backgroundColor = "yellow";
+        document.getElementById("20").style.backgroundColor = "white";
+        document.getElementById("21").style.backgroundColor = "yellow";
+        document.getElementById("22").style.backgroundColor = "yellow";
+        document.getElementById("23").style.backgroundColor = "yellow";
+        document.getElementById("24").style.backgroundColor = "yellow";
+        document.getElementById("25").style.backgroundColor = "yellow";
+
+    }
+    if (document.getElementById("verde").checked &&
+        document.getElementById("cruz").checked) {
+        document.getElementById("1").style.backgroundColor = "green";
+        document.getElementById("2").style.backgroundColor = "white";
+        document.getElementById("3").style.backgroundColor = "white";
+        document.getElementById("4").style.backgroundColor = "white";
+        document.getElementById("5").style.backgroundColor = "green";
+        document.getElementById("6").style.backgroundColor = "white";
+        document.getElementById("7").style.backgroundColor = "green";
+        document.getElementById("8").style.backgroundColor = "white";
+        document.getElementById("9").style.backgroundColor = "green";
+        document.getElementById("10").style.backgroundColor = "white";
+        document.getElementById("11").style.backgroundColor = "white";
+        document.getElementById("12").style.backgroundColor = "white";
+        document.getElementById("13").style.backgroundColor = "green";
+        document.getElementById("14").style.backgroundColor = "white";
+        document.getElementById("15").style.backgroundColor = "white";
+        document.getElementById("16").style.backgroundColor = "white";
+        document.getElementById("17").style.backgroundColor = "green";
+        document.getElementById("18").style.backgroundColor = "white";
+        document.getElementById("19").style.backgroundColor = "green";
+        document.getElementById("20").style.backgroundColor = "white";
+        document.getElementById("21").style.backgroundColor = "green";
+        document.getElementById("22").style.backgroundColor = "white";
+        document.getElementById("23").style.backgroundColor = "white";
+        document.getElementById("24").style.backgroundColor = "white";
+        document.getElementById("25").style.backgroundColor = "green";
+ }
+    if (document.getElementById("verde").checked &&
+        document.getElementById("cuadrado").checked) {
+        document.getElementById("1").style.backgroundColor = "green";
+        document.getElementById("2").style.backgroundColor = "green";
+        document.getElementById("3").style.backgroundColor = "green";
+        document.getElementById("4").style.backgroundColor = "green";
+        document.getElementById("5").style.backgroundColor = "green";
+        document.getElementById("6").style.backgroundColor = "green";
+        document.getElementById("7").style.backgroundColor = "white";
+        document.getElementById("8").style.backgroundColor = "white";
+        document.getElementById("9").style.backgroundColor = "white";
+        document.getElementById("10").style.backgroundColor = "green";
+        document.getElementById("11").style.backgroundColor = "green";
+        document.getElementById("12").style.backgroundColor = "white";
+        document.getElementById("13").style.backgroundColor = "white";
+        document.getElementById("14").style.backgroundColor = "white";
+        document.getElementById("15").style.backgroundColor = "green";
+        document.getElementById("16").style.backgroundColor = "green";
+        document.getElementById("17").style.backgroundColor = "white";
+        document.getElementById("18").style.backgroundColor = "white";
+        document.getElementById("19").style.backgroundColor = "white";
+        document.getElementById("20").style.backgroundColor = "green";
+        document.getElementById("21").style.backgroundColor = "green";
+        document.getElementById("22").style.backgroundColor = "green";
+        document.getElementById("23").style.backgroundColor = "green";
+        document.getElementById("24").style.backgroundColor = "green";
+        document.getElementById("25").style.backgroundColor = "green";
+ }
+    if (document.getElementById("verde").checked &&
+        document.getElementById("triangulo").checked) {
+        document.getElementById("1").style.backgroundColor = "white";
+        document.getElementById("2").style.backgroundColor = "white";
+        document.getElementById("3").style.backgroundColor = "white";
+        document.getElementById("4").style.backgroundColor = "white";
+        document.getElementById("5").style.backgroundColor = "white";
+        document.getElementById("6").style.backgroundColor = "white";
+        document.getElementById("7").style.backgroundColor = "white";
+        document.getElementById("8").style.backgroundColor = "white";
+        document.getElementById("9").style.backgroundColor = "white";
+        document.getElementById("10").style.backgroundColor = "white";
+        document.getElementById("11").style.backgroundColor = "white";
+        document.getElementById("12").style.backgroundColor = "white";
+        document.getElementById("13").style.backgroundColor = "green";
+        document.getElementById("14").style.backgroundColor = "white";
+        document.getElementById("15").style.backgroundColor = "white";
+        document.getElementById("16").style.backgroundColor = "white";
+        document.getElementById("17").style.backgroundColor = "green";
+        document.getElementById("18").style.backgroundColor = "green";
+        document.getElementById("19").style.backgroundColor = "green";
+        document.getElementById("20").style.backgroundColor = "white";
+        document.getElementById("21").style.backgroundColor = "green";
+        document.getElementById("22").style.backgroundColor = "green";
+        document.getElementById("23").style.backgroundColor = "green";
+        document.getElementById("24").style.backgroundColor = "green";
+        document.getElementById("25").style.backgroundColor = "green";
+    }
+}
+        </script>
+    </body>
+</html>
